@@ -21,8 +21,8 @@
   <p *ngIf="serverCreated; else noServer">Server Name is: {{ serverName }} </p>
   <ng-template #noServer>
     <p>No Server Exists Yet</p></ng-template>
-  <app-server></app-server>
-  <app-server></app-server>
+  <app-server *ngFor="let server of servers"></app-server>
+
 </body>
 
 
